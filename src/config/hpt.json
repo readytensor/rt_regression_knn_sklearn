@@ -1,0 +1,28 @@
+{
+  "num_trials": 20,
+  "hyperparameters": [
+    {
+      "name": "n_neighbors",
+      "short_desc": "Number of neighbors to use by default for kneighbors queries.",
+      "type": "int",
+      "search_type": "uniform",
+      "range_low": 2,
+      "range_high": 10
+    },
+    {
+      "name": "weights",
+      "short_desc": "Weight function used in prediction that determines how the points are weighted",
+      "default": "uniform",
+      "type": "categorical",
+      "categories": ["uniform", "distance"]
+    },
+    {
+      "name": "leaf_size",
+      "short_desc": "the number of leaves used in construction for either ball_tree or kd_tree",
+      "type": "int",
+      "search_type": "uniform",
+      "range_low": 5,
+      "range_high": 50
+    }
+  ]
+}
